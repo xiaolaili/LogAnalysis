@@ -4,8 +4,8 @@ import "log"
 
 var matchers = make(map[string]Matcher)
 
-func Run(file string) {
-
+func Run(logFile string) {
+	log.Println(logFile)
 }
 
 // 分析日志

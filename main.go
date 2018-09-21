@@ -1,9 +1,11 @@
 package main
 
 import (
-	"LogAnalysis/analysis"
 	"log"
 	"os"
+
+	"LogAnalysis/analysis"
+	_ "LogAnalysis/matchers"
 )
 
 func init() {
@@ -12,4 +14,6 @@ func init() {
 
 func main() {
 	analysis.Run("data/QtHYDisplayClientDTY_20180913.log")
+
+	log.Println("end")
 }
